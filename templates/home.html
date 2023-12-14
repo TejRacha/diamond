@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diamond Price Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to right, #add8e6, #ffffff); /* Light blue to White gradient background */
+            font-family: 'Arial', sans-serif;
+            color: #333; /* Text color changed to a darker shade for better visibility */
+            overflow: hidden;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff;
+            animation: titleAnimation 2s infinite alternate; /* Subtle animation for the title */
+        }
+
+        #predictButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            background-color: #ff6347; /* Light Coral color for the button */
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            animation: buttonAnimation 1.5s infinite alternate; /* Subtle animation for the button */
+            text-decoration: none; /* Remove default link underline */
+        }
+
+        #diamondContent {
+            margin-top: 30px;
+            font-size: 16px;
+        }
+
+        /* Animation keyframes */
+        @keyframes titleAnimation {
+            from { transform: scale(1); }
+            to { transform: scale(1.02); }
+        }
+
+        @keyframes buttonAnimation {
+            from { transform: translateY(0); }
+            to { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Diamond Price Prediction</h1>
+        <a href="predict" id="predictButton">Predict Price</a>
+        <div id="diamondContent">
+            <p>Welcome to our Diamond Price Predictor. Enter the necessary details to get an estimated price for your diamonds.</p>
+            <p>Our advanced algorithms analyze various factors to provide you with an accurate prediction.</p>
+            <!-- Add more content as needed -->
+        </div>
+    </div>
+</body>
+</html>
