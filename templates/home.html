@@ -12,9 +12,9 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(to right, #add8e6, #ffffff); /* Light blue to White gradient background */
-            font-family: 'Arial', sans-serif;
-            color: #333; /* Text color changed to a darker shade for better visibility */
+            background: linear-gradient(to right, #5954b156, #191515); /* Black to White gradient background */
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
             overflow: hidden;
         }
 
@@ -26,33 +26,30 @@
             font-size: 36px;
             margin-bottom: 20px;
             color: #fff;
-            animation: titleAnimation 2s infinite alternate; /* Subtle animation for the title */
+            font-weight: bold;
         }
 
         #predictButton {
             padding: 10px 20px;
             font-size: 18px;
             cursor: pointer;
-            background-color: #ff6347; /* Light Coral color for the button */
+            background-color: #000;
             border: none;
             color: #fff;
             border-radius: 5px;
-            animation: buttonAnimation 1.5s infinite alternate; /* Subtle animation for the button */
             text-decoration: none; /* Remove default link underline */
+            display: inline-block;
+            animation: fizzyAnimation 1.5s infinite alternate; /* Fizzy animation for the button */
         }
 
         #diamondContent {
             margin-top: 30px;
             font-size: 16px;
+            color: #ccc;
         }
 
         /* Animation keyframes */
-        @keyframes titleAnimation {
-            from { transform: scale(1); }
-            to { transform: scale(1.02); }
-        }
-
-        @keyframes buttonAnimation {
+        @keyframes fizzyAnimation {
             from { transform: translateY(0); }
             to { transform: translateY(-5px); }
         }

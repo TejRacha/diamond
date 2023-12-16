@@ -12,9 +12,9 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(to right, #87CEEB, #00CED1); /* Light blue to Light cyan gradient background */
+            background: linear-gradient(to right, #47555a, #080808); /* Light blue to Light cyan gradient background */
             font-family: 'Arial', sans-serif;
-            color: #000; /* Text color changed to black for better visibility on a light background */
+            color: #a9a9a9; /* Text color changed to black for better visibility on a light background */
             overflow-x: hidden;
         }
 
@@ -25,7 +25,7 @@
         h1 {
             font-size: 36px;
             margin-bottom: 20px;
-            background: linear-gradient(to right, #87CEEB, #00CED1); /* Light blue to Light cyan gradient for the title */
+            background: linear-gradient(to right, #ffffff, #c8c8c8); /* Light blue to Light cyan gradient for the title */
             display: inline;
             -webkit-background-clip: text;
             color: transparent;
@@ -63,9 +63,9 @@
             padding: 10px 20px;
             font-size: 18px;
             cursor: pointer;
-            background-color: #00CED1; /* Light cyan color for the button */
+            background-color: #f3f8f8; /* Light cyan color for the button */
             border: none;
-            color: #fff;
+            color: #060505;
             border-radius: 5px;
             animation: pulse 1.5s infinite; /* Pulse animation for the button */
         }
@@ -90,24 +90,24 @@
 </head>
 <body>
     <div id="container">
-        <h1>Diamond <span style="color: #ff8c00;">Price Prediction</span></h1>
+        <h1>Diamond <span style="color: #efefef;">Price Prediction</span></h1>
         <form action="/predict" method="post">
             <label for="carat">Carat:</label>
             <input type="number" step="0.01" id="carat" name="carat" required>
 
-            <label for="table">Table:</label>
+            <label for="table">Table</label>
             <input type="number" step="0.01" id="table" name="table" required>
 
-            <label for="x">X:</label>
+            <label for="x">XXX</label>
             <input type="number" step="0.01" id="x" name="x" required>
 
-            <label for="y">Y:</label>
+            <label for="y">YYY</label>
             <input type="number" step="0.01" id="y" name="y" required>
 
-            <label for="z">Z:</label>
+            <label for="z">ZZZ</label>
             <input type="number" step="0.01" id="z" name="z" required>
 
-            <label for="color_encoded">Color Encoded (0-6):</label>
+            <label for="color_encoded">Color Encoded</label>
             <input type="number" id="color_encoded" name="color_encoded" min="0" max="6" required>
 
             <button id="predictButton" type="submit">Predict Now</button>
